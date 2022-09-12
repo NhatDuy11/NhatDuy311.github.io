@@ -1,0 +1,309 @@
+:root {
+    --BORDER_BASE: 1px solid lightgray;
+    --VIEW_WIDTH: 1100px;
+    --MAIN_COLOR: #e7ab3c;
+    --MAIN_DARK_COLOR: #252525;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Muli", sans-serif;
+    font-size: 14px;
+    color: var(--MAIN_DARK_COLOR);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border-bottom: var(--BORDER_BASE);
+}
+
+.baseScreen {
+    width: var(--VIEW_WIDTH);
+    display: flex;
+}
+
+.baseScreen p {
+    padding: 15px 0px;
+    font-weight: bold;
+}
+
+.baseScreen p:nth-child(1) {
+    border-right: 1px solid lightgray;
+    padding-right: 20px;
+    margin-right: 15px;
+}
+
+.baseScreen>div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.baseScreen>div a {
+    padding: 15px 0px;
+    margin-left: 15px;
+}
+
+.baseScreen>div a:nth-child(1) {
+    border-right: var(--BORDER_BASE);
+    padding-right: 15px;
+}
+
+.infoScreen {
+    display: flex;
+    justify-content: center;
+}
+
+.infoScreen>div {
+    width: var(--VIEW_WIDTH);
+    display: flex;
+    align-items: flex-end;
+}
+
+.infoScreen>div h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 30px 0px 0px;
+}
+
+.infoScreen>div h1 span {
+    color: var(--MAIN_COLOR);
+    font-size: 60px;
+}
+
+.infoScreen>div input {
+    padding: 30px 0px 0px;
+    margin: 0px 0px 5px 50px;
+    width: 70%;
+    border: var(--BORDER_BASE);
+    border-right: 0px;
+}
+
+.infoScreen>div button {
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    background: var(--MAIN_COLOR);
+    color: white;
+    font-weight: bolder;
+    border: var(--BORDER_BASE);
+    border-left: 0px;
+}
+
+.infoScreen>div>div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infoScreen>div>div>a {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+.infoScreen>div>div>a span {
+    position: absolute;
+    background-color: var(--MAIN_COLOR);
+    color: white;
+    border-radius: 20px;
+    height: 18px;
+    width: 18px;
+    padding-top: 2px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 13px;
+    top: 1px;
+    right: -25px;
+}
+
+.navbar {
+    margin-top: 30px;
+    background-color: var(--MAIN_DARK_COLOR);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 20px 40px;
+    font-weight: bolder;
+    border-left: var(--BORDER_BASE);
+    text-decoration: none;
+}
+
+.navbar a:nth-child(1) {
+    border-left: 0px;
+}
+
+.MainImage {
+    background-image: url(./img.png);
+    height: 725px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.MainImage>div {
+    width: var(--VIEW_WIDTH);
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
+.MainImage .leftSide {
+    width: 50%;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-top: 200px;
+}
+
+.MainImage .leftSide h2 {
+    color: var(--MAIN_COLOR);
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.MainImage .leftSide h1 {
+    margin-top: 10px;
+    font-size: 70px;
+    padding-left: 5px;
+}
+
+.MainImage .leftSide p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.MainImage .leftSide button {
+    border: var(--BORDER_BASE);
+    padding: 15px 30px;
+    margin-top: 40px;
+    font-weight: bolder;
+    color: white;
+    background-color: var(--MAIN_COLOR);
+}
+
+.ShortMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.ShortMenu>div {
+    width: 570px;
+    height: 320px;
+    margin: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ShortMenu>div h1 {
+    background-color: white;
+    padding: 10px 40px;
+    font-size: 30px;
+}
+
+.ShortMenu>div:nth-child(1) {
+    background-image: url(./men.png);
+}
+
+.ShortMenu>div:nth-child(2) {
+    background-image: url(./woman.png);
+}
+
+.ShortMenu>div:nth-child(3) {
+    background-image: url(./kid.png);
+}
+
+.Title {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: bolder;
+    border-top: 1px dashed lightgray;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.Product {
+    display: flex;
+    justify-content: center;
+}
+
+.Product>div {
+    width: var(--VIEW_WIDTH);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Product .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 30px;
+}
+
+.Product .card * {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Product .card h2 {
+    color: rgb(172, 172, 172);
+    margin-top: 15px;
+}
+
+.Product .card h1 {
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.Product .card h3 {
+    color: var(--MAIN_COLOR);
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.Product span {
+    position: absolute;
+    top: 40px;
+    left: 30;
+    background-color: #76BC42;
+    color: white;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+footer {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    background-color: var(--MAIN_DARK_COLOR);
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+footer>span {
+    width: 90%;
+    border: 2px dashed var(--MAIN_COLOR);
+}
+
+footer>div {
+    width: var(--VIEW_WIDTH);
+    display: flex;
+}
+
+footer>div>h1 {
+    color: white;
+    font-size: 30px;
+}
+
+footer>div>h1>span {
+    color: var(--MAIN_COLOR);
+    font-size: 60px;
+}
